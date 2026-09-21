@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="火影忍者疾风传720免费观看全集 - 提供高清无删减的火影忍者疾风传在线观看服务，包含分集剧情介绍、角色图鉴及高清全集资源下载指南。">
+    <meta name="keywords" content="火影忍者疾风传720免费观看全集,火影忍者疾风传,火影疾风传在线观看,火影全集,动漫资源">
+    <title>火影忍者疾风传720免费观看全集 - 高清全集资源与观看指南</title>
+    <style>
+        :root {
+            --primary-color: #ff6b00;
+            --secondary-color: #1a1a1a;
+            --bg-color: #f4f4f4;
+            --card-bg: #ffffff;
+            --text-main: #333333;
+            --text-sub: #666666;
+            --border-radius: 8px;
+            --spacing-unit: 16px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.2s;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--secondary-color);
+            color: #fff;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+        }
+
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .logo span {
+            color: #fff;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://picsum.photos/seed/narutohero/1200/600') no-repeat center center/cover;
+            color: #fff;
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 0.9;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            box-shadow: 0 4px 15px rgba(255, 107, 0, 0.4);
+        }
+
+        .cta-button:hover {
+            background-color: #e65100;
+            transform: translateY(-2px);
+        }
+
+        /* Main Content */
+        main {
+            padding: 3rem 0;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            padding-left: 10px;
+            border-left: 5px solid var(--primary-color);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        /* Filter Bar */
+        .filter-bar {
+            background: var(--card-bg);
+            padding: 1rem;
+            border-radius: var(--border-radius);
+            margin-bottom: 2rem;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 6px 16px;
+            border: 1px solid #ddd;
+            border-radius: 20px;
+            background: #fff;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-size: 0.9rem;
+        }
+
+        .filter-btn.active, .filter-btn:hover {
+            background: var(--primary-color);
+            color: #fff;
+            border-color: var(--primary-color);
+        }
+
+        /* Grid Layout */
+        .anime-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 3rem;
+        }
+
+        .anime-card {
+            background: var(--card-bg);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            transition: transform 0.2s, box-shadow 0.2s;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .anime-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+
+        .card-image {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            background-color: #eee;
+        }
+
+        .card-content {
+            padding: 15px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-title {
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: var(--text-main);
+        }
+
+        .card-info {
+            font-size: 0.85rem;
+            color: var(--text-sub);
+            margin-bottom: 12px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .card-tags {
+            margin-top: auto;
+        }
+
+        .tag {
+            font-size: 0.75rem;
+            padding: 2px 8px;
+            border-radius: 4px;
+            background: #eee;
+            color: #555;
+            margin-right: 4px;
+        }
+
+        .tag.hd {
+            background: rgba(255, 107, 0, 0.1);
+            color: var(--primary-color);
+        }
+
+        /* Latest Episodes List */
+        .episode-list {
+            background: var(--card-bg);
+            border-radius: var(--border-radius);
+            padding: 1.5rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .episode-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .episode-item:last-child {
+            border-bottom: none;
+        }
+
+        .ep-title {
+            font-weight: 500;
+        }
+
+        .ep-number {
+            background: #eee;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            margin-right: 10px;
+        }
+
+        .watch-link {
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+
+        /* Info Section */
+        .info-section {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 20px;
+            margin-bottom: 3rem;
+        }
+
+        .info-card {
+            background: var(--card-bg);
+            padding: 20px;
+            border-radius: var(--border-radius);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .info-card h3 {
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 0.5rem;
+        }
+
+        .character-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            text-align: center;
+        }
+
+        .char-item img {
+            width: 100%;
+            border-radius: 50%;
+            margin-bottom: 5px;
+        }
+
+        .char-name {
+            font-size: 0.9rem;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            margin-top: 2rem;
+        }
+
+        .faq-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .faq-question {
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .faq-answer {
+            color: var(--text-sub);
+            padding-left: 10px;
+            border-left: 3px solid var(--primary-color);
+            font-size: 0.95rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--secondary-color);
+            color: #aaa;
+            padding: 3rem 0;
+            margin-top: 3rem;
+            font-size: 0.9rem;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-col h4 {
+            color: #fff;
+            margin-bottom: 1rem;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 8px;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--primary-color);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid #333;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-inner {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .info-section {
+                grid-template-columns: 1fr;
+            }
+
+            .character-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container header-inner">
+            <a href="#" class="logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+                <span>疾风传全集</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">分集目录</a></li>
+                    <li><a href="#">剧场版</a></li>
+                    <li><a href="#">角色图鉴</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>火影忍者疾风传720免费观看全集</h1>
+            <p>重温火影之路，感受鸣人与佐助羁绊的升华。提供高清无删减版本，随时随地畅享热血动漫盛宴。</p>
+            <a href="#latest" class="cta-button">开始观看全集</a>
+        </div>
+    </section>
+
+    <main class="container">
+        <!-- Quick Access -->
+        <div class="filter-bar">
+            <button class="filter-btn active">最新更新</button>
+            <button class="filter-btn">剧情介绍</button>
+            <button class="filter-btn">角色排行</button>
+            <button class="filter-btn">剧场版</button>
+        </div>
+
+        <h2 class="section-title">热门推荐</h2>
+        <div class="anime-grid">
+            <article class="anime-card">
+                <img src="https://picsum.photos/seed/naruto1/300/420" alt="火影忍者疾风传封面" class="card-image">
+                <div class="card-content">
+                    <h3 class="card-title">火影忍者疾风传</h3>
+                    <div class="card-info">
+                        <span>500+ 集</span>
+                        <span>HD</span>
+                    </div>
+                    <div class="card-tags">
+                        <span class="tag hd">热血</span>
+                        <span class="tag">冒险</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="anime-card">
+                <img src="https://picsum.photos/seed/naruto2/300/420" alt="火影剧场版" class="card-image">
+                <div class="card-content">
+                    <h3 class="card-title">火影忍者剧场版</h3>
+                    <div class="card-info">
+                        <span>10 部</span>
+                        <span>4K</span>
+                    </div>
+                    <div class="card-tags">
+                        <span class="tag hd">电影</span>
+                        <span class="tag">经典</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="anime-card">
+                <img src="https://picsum.photos/seed/naruto3/300/420" alt="博人传" class="card-image">
+                <div class="card-content">
+                    <h3 class="card-title">博人传：火影忍者新时代</h3>
+                    <div class="card-info">
+                        <span>290+ 集</span>
+                        <span>HD</span>
+                    </div>
+                    <div class="card-tags">
+                        <span class="tag hd">续作</span>
+                        <span class="tag">传承</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="anime-card">
+                <img src="https://picsum.photos/seed/naruto4/300/420" alt="羁绊" class="card-image">
+                <div class="card-content">
+                    <h3 class="card-title">疾风传特别篇</h3>
+                    <div class="card-info">
+                        <span>5 集</span>
+                        <span>HD</span>
+                    </div>
+                    <div class="card-tags">
+                        <span class="tag hd">番外</span>
+                        <span class="tag">回忆</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <div class="info-section">
+            <div class="info-card">
+                <h3>剧情简介</h3>
+                <p style="font-size: 0.9rem; color: #666; margin-bottom: 1rem;">
+                    故事接续第一部，讲述了鸣人成为火影后的成长故事。佩恩入侵木叶村，鸣人觉醒九尾查克拉，最终与佩恩达成和解。随后鸣人踏上寻找佐助的旅程，经历了无数战斗与磨练，最终在终结之谷与佐助决战，并带他回到木叶。
+                </p>
+                <a href="#" style="color: var(--primary-color); font-size: 0.9rem; font-weight: bold;">查看详细剧情 &rarr;</a>
+            </div>
+            <div class="info-card">
+                <h3>主要角色</h3>
+                <div class="character-grid">
+                    <div class="char-item">
+                        <img src="https://picsum.photos/seed/char1/100/100" alt="漩涡鸣人">
+                        <div class="char-name">漩涡鸣人</div>
+                    </div>
+                    <div class="char-item">
+                        <img src="https://picsum.photos/seed/char2/100/100" alt="宇智波佐助">
+                        <div class="char-name">宇智波佐助</div>
+                    </div>
+                    <div class="char-item">
+                        <img src="https://picsum.photos/seed/char3/100/100" alt="春野樱">
+                        <div class="char-name">春野樱</div>
+                    </div>
+                    <div class="char-item">
+                        <img src="https://picsum.photos/seed/char4/100/100" alt="旗木卡卡西">
+                        <div class="char-name">旗木卡卡西</div>
+                    </div>
+                    <div class="char-item">
+                        <img src="https://picsum.photos/seed/char5/100/100" alt="奈良鹿丸">
+                        <div class="char-name">奈良鹿丸</div>
+                    </div>
+                    <div class="char-item">
+                        <img src="https://picsum.photos/seed/char6/100/100" alt="漩涡水户">
+                        <div class="char-name">漩涡水户</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="section-title">最新更新</h2>
+        <div class="episode-list" id="latest">
+            <div class="episode-item">
+                <div>
+                    <span class="ep-number">第 500 集</span>
+                    <span class="ep-title">佩恩篇：鸣人的成长</span>
+                </div>
+                <a href="#" class="watch-link">立即观看</a>
+            </div>
+            <div class="episode-item">
+                <div>
+                    <span class="ep-number">第 501 集</span>
+                    <span class="ep-title">再会：与佐助的重逢</span>
+                </div>
+                <a href="#" class="watch-link">立即观看</a>
+            </div>
+            <div class="episode-item">
+                <div>
+                    <span class="ep-number">第 502 集</span>
+                    <span class="ep-title">疾风传：鸣人的旅途</span>
+                </div>
+                <a href="#" class="watch-link">立即观看</a>
+            </div>
+            <div class="episode-item">
+                <div>
+                    <span class="ep-number">第 503 集</span>
+                    <span class="ep-title">佩恩入侵：第四次忍界大战前夕</span>
+                </div>
+                <a href="#" class="watch-link">立即观看</a>
+            </div>
+            <div class="episode-item">
+                <div>
+                    <span class="ep-number">第 504 集</span>
+                    <span class="ep-title">晓组织：最后的阴谋</span>
+                </div>
+                <a href="#" class="watch-link">立即观看</a>
+            </div>
+        </div>
+
+        <div class="faq-section">
+            <h2 class="section-title">常见问题</h2>
+            <div class="faq-item">
+                <div class="faq-question">如何免费观看火影忍者疾风传全集？</div>
+                <div class="faq-answer">您可以直接访问本站，点击任意剧集即可开始在线播放，支持高清画质，无需下载即可观看。</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">画质最高支持到多少？</div>
+                <div class="faq-answer">本站提供从流畅到超清（720P-1080P）的多种画质选择，请根据您的网络环境选择合适的清晰度。</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">支持手机端观看吗？</div>
+                <div class="faq-answer">完全支持。本站已针对移动端进行优化，您可以在手机浏览器或安装相关APP后流畅观看。</div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4>关于我们</h4>
+                    <p>致力于为动漫爱好者提供最便捷、高清的在线观看体验。支持最新番剧更新，还原原汁原味的剧情。</p>
+                </div>
+                <div class="footer-col">
+                    <h4>快速导航</h4>
+                    <ul>
+                        <li><a href="#">首页</a></li>
+                        <li><a href="#">动漫分类</a></li>
+                        <li><a href="#">排行榜</a></li>
+                        <li><a href="#">用户登录</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>友情链接</h4>
+                    <ul>
+                        <li><a href="#">火影中文网</a></li>
+                        <li><a href="#">动漫之家</a></li>
+                        <li><a href="#">Bilibili</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 疾风传全集观看网 版权所有. 本站内容仅供学习交流，请支持正版动漫。</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</body>
+</html>
