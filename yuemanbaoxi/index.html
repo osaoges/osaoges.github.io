@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="月满抱西环 - 沉浸式古风音乐专辑与视觉艺术作品集。探索关于月亮、西风与怀抱的唯美意境，收录原创音乐、视觉插画及诗意文案。">
+    <meta name="keywords" content="月满抱西环,古风音乐,国风专辑,唯美意境,原创音乐">
+    <title>月满抱西环 - 唯美古风音乐与视觉意境集</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #d35400;
+            --bg-color: #fdfbf7;
+            --card-bg: #ffffff;
+            --text-main: #333333;
+            --text-secondary: #666666;
+            --border-radius: 12px;
+            --spacing-unit: 20px;
+            --max-width: 1200px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "PingFang SC", "Microsoft YaHei", "Helvetica Neue", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s ease;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Utility */
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+        }
+
+        .section-title {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            position: relative;
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 2px;
+            background: var(--accent-color);
+            margin: 10px auto 0;
+        }
+
+        /* Header */
+        header {
+            background-color: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            padding: 1rem 0;
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--primary-color);
+            letter-spacing: 1px;
+        }
+
+        .logo span {
+            color: var(--accent-color);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav a {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            position: relative;
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--primary-color);
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background-color: var(--accent-color);
+            transition: width 0.3s;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 80vh;
+            min-height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://picsum.photos/seed/moonlight/1920/1080.jpg') no-repeat center center/cover;
+            color: #fff;
+            padding: 0 1rem;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            animation: fadeIn Up 1s ease-out;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            font-weight: 400;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: var(--accent-color);
+            color: #fff;
+            border-radius: 30px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #e67e22;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(211, 84, 0, 0.4);
+        }
+
+        /* Intro Section */
+        .intro {
+            padding: 6rem 0;
+            text-align: center;
+        }
+
+        .intro p {
+            max-width: 700px;
+            margin: 0 auto 1.5rem;
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+        }
+
+        /* Visual Gallery */
+        .gallery-section {
+            padding: 4rem 0;
+            background-color: #fff;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+            aspect-ratio: 3/4;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .gallery-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px;
+            background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+            color: #fff;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover .gallery-caption {
+            transform: translateY(0);
+        }
+
+        /* Lyrics & Atmosphere */
+        .lyrics-section {
+            padding: 6rem 0;
+            background-color: var(--bg-color);
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+        }
+
+        .lyrics-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .lyrics-text {
+            flex: 1;
+            min-width: 300px;
+            font-family: "KaiTi", "STKaiti", serif;
+            font-size: 1.3rem;
+            line-height: 2;
+            color: var(--primary-color);
+            text-align: justify;
+        }
+
+        .lyrics-highlight {
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+
+        .lyrics-visual {
+            flex: 1;
+            min-width: 300px;
+            height: 400px;
+            background: url('https://picsum.photos/seed/lantern/600/800.jpg') center/cover;
+            border-radius: var(--border-radius);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        /* Tracklist */
+        .tracks-section {
+            padding: 6rem 0;
+        }
+
+        .track-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .track-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem;
+            background: #fff;
+            border-radius: 8px;
+            border-left: 4px solid var(--accent-color);
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        .track-item:hover {
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            padding-left: 2rem;
+        }
+
+        .track-info h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .track-info p {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        .track-icon {
+            color: var(--text-secondary);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary-color);
+            color: #ecf0f1;
+            padding: 4rem 0 2rem;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-logo {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .social-links a {
+            color: #bdc3c7;
+            font-size: 1.2rem;
+        }
+
+        .social-links a:hover {
+            color: #fff;
+        }
+
+        .copyright {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 2rem;
+            font-size: 0.9rem;
+            color: #95a5a6;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .nav-wrapper {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .lyrics-container {
+                flex-direction: column;
+            }
+
+            .lyrics-visual {
+                width: 100%;
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-wrapper">
+            <div class="logo">月满<span>抱西环</span></div>
+            <nav>
+                <ul>
+                    <li><a href="#intro" class="active">序章</a></li>
+                    <li><a href="#gallery">画卷</a></li>
+                    <li><a href="#lyrics">词曲</a></li>
+                    <li><a href="#tracks">聆听</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>月满抱西环</h1>
+                <p>一轮清辉，半城风絮，在古老的长巷中寻觅那份跨越时空的温柔怀抱。</p>
+                <a href="#tracks" class="btn">开始聆听</a>
+            </div>
+        </section>
+
+        <!-- Intro Section -->
+        <section id="intro" class="intro container">
+            <h2 class="section-title">关于意境</h2>
+            <p>“月满抱西环”并非单纯的自然景观描写，而是一种关于圆满、归属与守望的哲学隐喻。它象征着在喧嚣尘世中，人们对于内心宁静角落的渴望，以及在特定时刻（如月圆之夜）所感受到的温暖与慰藉。</p>
+            <p>本页面旨在通过视觉与听觉的通感，重构这一诗意场景，为观者与听者提供一片精神栖息地。</p>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="gallery-section">
+            <div class="container">
+                <h2 class="section-title">画卷拾遗</h2>
+                <div class="gallery-grid">
+                    <article class="gallery-item">
+                        <img src="https://picsum.photos/seed/moon/400/533" alt="月下古亭">
+                        <div class="gallery-caption">
+                            <h3>月下古亭</h3>
+                            <p>独自凭栏，听风过回廊。</p>
+                        </div>
+                    </article>
+                    <article class="gallery-item">
+                        <img src="https://picsum.photos/seed/lantern/400/533" alt="西风残烛">
+                        <div class="gallery-caption">
+                            <h3>西风残烛</h3>
+                            <p>光影摇曳，映照归途。</p>
+                        </div>
+                    </article>
+                    <article class="gallery-item">
+                        <img src="https://picsum.photos/seed/river/400/533" alt="环水映月">
+                        <div class="gallery-caption">
+                            <h3>环水映月</h3>
+                            <p>天上一轮，水中一轮。</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lyrics & Atmosphere Section -->
+        <section id="lyrics" class="lyrics-section">
+            <div class="container">
+                <div class="lyrics-container">
+                    <div class="lyrics-text">
+                        <p>长街长，烟花繁，你挑灯回看。</p>
+                        <p>月满抱西环，<span class="lyrics-highlight">梦醒不知处。</span></p>
+                        <p>这一季的月光，洒在青石板上，凉了谁的衣衫。</p>
+                        <p>我守着这半轮清辉，等风起，等云散，等你。</p>
+                        <p>西风烈，马蹄疾，不过是过客匆匆。</p>
+                        <p>唯有这怀抱，如影随形，温热如初。</p>
+                    </div>
+                    <div class="lyrics-visual"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tracks Section -->
+        <section id="tracks" class="tracks-section">
+            <div class="container">
+                <h2 class="section-title">曲目列表</h2>
+                <div class="track-list">
+                    <div class="track-item">
+                        <div class="track-info">
+                            <h3>01. 序章·夜未央</h3>
+                            <p>钢琴独奏，营造静谧氛围</p>
+                        </div>
+                        <span class="track-icon">♪</span>
+                    </div>
+                    <div class="track-item">
+                        <div class="track-info">
+                            <h3>02. 月满西楼</h3>
+                            <p>古筝与弦乐交织，婉转悠扬</p>
+                        </div>
+                        <span class="track-icon">♪</span>
+                    </div>
+                    <div class="track-item">
+                        <div class="track-info">
+                            <h3>03. 西风古道</h3>
+                            <p>激昂的鼓点与笛声，诉说远方</p>
+                        </div>
+                        <span class="track-icon">♪</span>
+                    </div>
+                    <div class="track-item">
+                        <div class="track-info">
+                            <h3>04. 抱怀·终章</h3>
+                            <p>管弦乐合奏，回归宁静与升华</p>
+                        </div>
+                        <span class="track-icon">♪</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">月满抱西环</div>
+                <div class="social-links">
+                    <a href="#">微博</a>
+                    <a href="#">Bilibili</a>
+                    <a href="#">网易云音乐</a>
+                </div>
+            </div>
+            <p class="copyright">Copyright © 2023 月满抱西环意境集. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
