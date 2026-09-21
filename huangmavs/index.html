@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="皇马vs加拉塔萨雷比赛前瞻、战术分析、历史交锋记录及实时比分资讯。为您提供最专业的欧联杯比赛指南。">
+    <meta name="keywords" content="皇马vs加拉塔萨雷,皇马,加拉塔萨雷,欧联杯,足球比赛,足球资讯">
+    <title>皇马vs加拉塔萨雷-欧联杯激战前瞻与比赛指南</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-blue: #0061AD;
+            --primary-red: #FEBE10;
+            --text-dark: #1A1A1A;
+            --text-gray: #666666;
+            --bg-light: #F5F7FA;
+            --white: #FFFFFF;
+            --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Header & Nav */
+        header {
+            background-color: var(--white);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary-blue);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span {
+            color: var(--text-dark);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            font-weight: 500;
+            color: var(--text-gray);
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover, .nav-links a.active {
+            color: var(--primary-blue);
+        }
+
+        .live-badge {
+            background-color: #FF4D4F;
+            color: white;
+            font-size: 0.75rem;
+            padding: 2px 8px;
+            border-radius: 10px;
+            margin-left: 5px;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.6; }
+            100% { opacity: 1; }
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, rgba(0,97,173,0.9), rgba(40,40,40,0.8)), url('https://picsum.photos/seed/stadium/1920/1080') center/cover no-repeat;
+            color: var(--white);
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .match-tag {
+            background-color: var(--primary-red);
+            color: var(--text-dark);
+            padding: 5px 15px;
+            border-radius: 4px;
+            font-weight: 700;
+            display: inline-block;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            line-height: 1.2;
+        }
+
+        .match-info {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .teams-display {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            margin-bottom: 30px;
+        }
+
+        .team {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .team-logo {
+            width: 100px;
+            height: 100px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.3);
+        }
+
+        .team-name {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .vs-text {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary-red);
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 35px;
+            background-color: var(--white);
+            color: var(--primary-blue);
+            font-weight: 700;
+            border-radius: 30px;
+            transition: var(--transition);
+            border: 2px solid var(--white);
+        }
+
+        .btn:hover {
+            background-color: transparent;
+            color: var(--white);
+        }
+
+        /* Main Layout */
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 30px;
+        }
+
+        /* News & Analysis */
+        .section-title {
+            font-size: 1.5rem;
+            margin-bottom: 25px;
+            border-left: 5px solid var(--primary-blue);
+            padding-left: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .section-title a {
+            font-size: 0.9rem;
+            color: var(--text-gray);
+            font-weight: normal;
+        }
+
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .news-card {
+            background: var(--white);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--card-shadow);
+            transition: var(--transition);
+        }
+
+        .news-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .news-img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .news-content {
+            padding: 20px;
+        }
+
+        .news-category {
+            font-size: 0.8rem;
+            color: var(--primary-blue);
+            font-weight: 700;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .news-title {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+
+        .news-meta {
+            font-size: 0.85rem;
+            color: #999;
+        }
+
+        .full-width-card {
+            grid-column: span 2;
+            display: flex;
+            background: var(--white);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--card-shadow);
+        }
+
+        .full-width-card img {
+            width: 300px;
+            object-fit: cover;
+        }
+
+        .full-width-content {
+            padding: 25px;
+            flex: 1;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .sidebar-widget {
+            background: var(--white);
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: var(--card-shadow);
+        }
+
+        .stat-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        .stat-row:last-child {
+            border-bottom: none;
+        }
+
+        .stat-label {
+            color: var(--text-gray);
+            font-size: 0.95rem;
+        }
+
+        .stat-value {
+            font-weight: 700;
+            color: var(--text-dark);
+        }
+
+        .team-stats {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary-blue);
+        }
+
+        .stat-label {
+            font-size: 0.85rem;
+            color: var(--text-gray);
+        }
+
+        /* Lineup Section */
+        .lineup-section {
+            background: var(--white);
+            margin: 30px 20px;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: var(--card-shadow);
+        }
+
+        .formation-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .formation-side {
+            flex: 1;
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .formation-side h4 {
+            margin-bottom: 15px;
+            color: var(--primary-blue);
+        }
+
+        .player-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+        }
+
+        .player {
+            background: white;
+            padding: 10px 5px;
+            border-radius: 4px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .player-num {
+            font-weight: bold;
+            font-size: 0.9rem;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .player-name {
+            font-size: 0.8rem;
+            color: var(--text-gray);
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .faq-item {
+            background: var(--white);
+            margin-bottom: 15px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+        }
+
+        .faq-question {
+            padding: 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            background: var(--white);
+        }
+
+        .faq-question::after {
+            content: '+';
+            font-size: 1.5rem;
+            color: var(--primary-blue);
+        }
+
+        .faq-item.active .faq-question::after {
+            content: '-';
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            background: #fafafa;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 200px;
+            padding: 0 20px 20px 20px;
+        }
+
+        .faq-answer p {
+            color: var(--text-gray);
+            font-size: 0.95rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1A1A1A;
+            color: #999;
+            padding: 50px 0 20px;
+            margin-top: 60px;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h4 {
+            color: var(--white);
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--primary-red);
+        }
+
+        .copyright {
+            text-align: center;
+            border-top: 1px solid #333;
+            padding-top: 20px;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .teams-display {
+                gap: 20px;
+            }
+
+            .team-logo {
+                width: 70px;
+                height: 70px;
+            }
+
+            .formation-box {
+                flex-direction: column;
+            }
+
+            .full-width-card {
+                flex-direction: column;
+            }
+
+            .full-width-card img {
+                width: 100%;
+                height: 200px;
+            }
+
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            .news-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .full-width-card {
+                grid-column: span 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo">⚽ <span>皇马vs加拉塔萨雷</span></a>
+            <nav class="nav-links">
+                <a href="#" class="active">比赛前瞻</a>
+                <a href="#">历史交锋</a>
+                <a href="#">阵容分析</a>
+                <a href="#">数据统计</a>
+                <a href="#">直播入口</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <span class="match-tag">欧联杯 1/4 决赛</span>
+                <h1>皇家马德里 vs 加拉塔萨雷</h1>
+                <p class="match-info">伯纳乌球场 · 2023年4月19日 03:00</p>
+                
+                <div class="teams-display">
+                    <div class="team">
+                        <div class="team-logo">🇪🇸</div>
+                        <div class="team-name">皇家马德里</div>
+                    </div>
+                    <div class="vs-text">VS</div>
+                    <div class="team">
+                        <div class="team-logo">🇹🇷</div>
+                        <div class="team-name">加拉塔萨雷</div>
+                    </div>
+                </div>
+
+                <a href="#" class="btn">查看直播与回放</a>
+            </div>
+        </section>
+
+        <div class="container">
+            <!-- Main Content -->
+            <div class="main-content">
+                <div class="section-title">
+                    <span>最新赛事资讯</span>
+                    <a href="#">更多 &gt;</a>
+                </div>
+
+                <article class="news-card full-width-card">
+                    <img src="https://picsum.photos/seed/real/400/300" alt="皇马备战">
+                    <div class="full-width-content">
+                        <span class="news-category">深度分析</span>
+                        <h2 class="news-title">伯纳乌之夜：皇马能否淘汰土耳其豪门晋级四强？</h2>
+                        <p style="color: #666; margin-top: 10px; font-size: 0.95rem;">
+                            随着首回合比赛结束，皇马回到主场将面临巨大的压力。本泽马与维尼修斯的状态将决定比赛走向。加拉塔萨雷作为土耳其联赛的霸主，其主场优势将转化为客场动力。本文将从战术板、伤病情况及历史数据三个维度为您详细解读这场关键战役。
+                        </p>
+                        <div class="news-meta" style="margin-top: 15px;">2023-04-18 | 作者：足球观察员</div>
+                    </div>
+                </article>
+
+                <div class="news-grid">
+                    <article class="news-card">
+                        <img src="https://picsum.photos/seed/lineup/400/300" alt="首发预测">
+                        <div class="news-content">
+                            <span class="news-category">阵容预测</span>
+                            <h3 class="news-title">安切洛蒂或祭出4-3-3铁桶阵</h3>
+                            <p class="news-meta">2小时前</p>
+                        </div>
+                    </article>
+                    <article class="news-card">
+                        <img src="https://picsum.photos/seed/turkey/400/300" alt="土耳其足球">
+                        <div class="news-content">
+                            <span class="news-category">球队动态</span>
+                            <h3 class="news-title">土耳其超级联赛劲旅的欧战经验</h3>
+                            <p class="news-meta">5小时前</p>
+                        </div>
+                    </article>
+                    <article class="news-card">
+                        <img src="https://picsum.photos/seed/goal/400/300" alt="精彩进球">
+                        <div class="news-content">
+                            <span class="news-category">精彩集锦</span>
+                            <h3 class="news-title">首回合那记世界波回顾</h3>
+                            <p class="news-meta">1天前</p>
+                        </div>
+                    </article>
+                    <article class="news-card">
+                        <img src="https://picsum.photos/seed/stadium2/400/300" alt="球场氛围">
+                        <div class="news-content">
+                            <span class="news-category">现场直击</span>
+                            <h3 class="news-title">伯纳乌门票开售情况一览</h3>
+                            <p class="news-meta">1天前</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="lineup-section">
+                    <div class="section-title">
+                        <span>首发阵容预测 (4-3-3)</span>
+                    </div>
+                    <div class="formation-box">
+                        <div class="formation-side">
+                            <h4>皇家马德里</h4>
+                            <div class="player-grid">
+                                <div class="player"><span class="player-num">1</span><span class="player-name">库尔图瓦</span></div>
+                                <div class="player"><span class="player-num">2</span><span class="player-name">卡瓦哈尔</span></div>
+                                <div class="player"><span class="player-num">5</span><span class="player-name">纳乔</span></div>
+                                <div class="player"><span class="player-num">4</span><span class="player-name">米利唐</span></div>
+                                <div class="player"><span class="player-num">23</span><span class="player-name">门迪</span></div>
+                                <div class="player"><span class="player-num">8</span><span class="player-name">克罗斯</span></div>
+                                <div class="player"><span class="player-num">14</span><span class="player-name">巴尔韦德</span></div>
+                                <div class="player"><span class="player-num">10</span><span class="player-name">莫德里奇</span></div>
+                                <div class="player"><span class="player-num">7</span><span class="player-name">维尼修斯</span></div>
+                                <div class="player"><span class="player-num">11</span><span class="player-name">罗德里戈</span></div>
+                                <div class="player"><span class="player-num">9</span><span class="player-name">本泽马</span></div>
+                            </div>
+                        </div>
+                        <div class="vs-text" style="font-size: 2rem;">VS</div>
+                        <div class="formation-side">
+                            <h4>加拉塔萨雷</h4>
+                            <div class="player-grid">
+                                <div class="player"><span class="player-num">1</span><span class="player-name">申顿</span></div>
+                                <div class="player"><span class="player-num">2</span><span class="player-name">梅尔滕斯</span></div>
+                                <div class="player"><span class="player-num">4</span><span class="player-name">桑切斯</span></div>
+                                <div class="player"><span class="player-num">5</span><span class="player-name">库利巴利</span></div>
+                                <div class="player"><span class="player-num">3</span><span class="player-name">阿克金</span></div>
+                                <div class="player"><span class="player-num">8</span><span class="player-name">图兰</span></div>
+                                <div class="player"><span class="player-num">10</span><span class="player-name">恰尔汗奥卢</span></div>
+                                <div class="player"><span class="player-num">17</span><span class="player-name">云达克</span></div>
+                                <div class="player"><span class="player-num">9</span><span class="player-name">巴舒亚伊</span></div>
+                                <div class="player"><span class="player-num">11</span><span class="player-name">伊卡尔迪</span></div>
+                                <div class="player"><span class="player-num">21</span><span class="player-name">亚兹奇</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <div class="sidebar-widget">
+                    <h3 style="margin-bottom: 20px; border-bottom: 2px solid var(--primary-red); display: inline-block;">历史交锋</h3>
+                    <div class="stat-row">
+                        <span class="stat-label">总场次</span>
+                        <span class="stat-value">2 场</span>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">皇马胜</span>
+                        <span class="stat-value" style="color: var(--primary-blue);">1 场</span>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">加拉塔萨雷胜</span>
+                        <span class="stat-value" style="color: #C0392B;">1 场</span>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">平局</span>
+                        <span class="stat-value">0 场</span>
+                    </div>
+                </div>
+
+                <div class="sidebar-widget">
+                    <h3 style="margin-bottom: 20px;">关键数据对比</h3>
+                    <div class="team-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">2.5</div>
+                            <div class="stat-label">场均进球</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">18</div>
+                            <div class="stat-label">皇马胜率</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">15</div>
+                            <div class="stat-label">加拉塔胜率</div>
+                        </div>
+                    </div>
+                    <p style="font-size: 0.9rem; color: #666; text-align: center;">数据来源：欧足联官方统计</p>
+                </div>
+
+                <div class="sidebar-widget">
+                    <h3 style="margin-bottom: 15px;">热门标签</h3>
+                    <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+                        <span style="background: #eee; padding: 5px 10px; border-radius: 15px; font-size: 0.85rem;">本泽马</span>
+                        <span style="background: #eee; padding: 5px 10px; border-radius: 15px; font-size: 0.85rem;">维尼修斯</span>
+                        <span style="background: #eee; padding: 5px 10px; border-radius: 15px; font-size: 0.85rem;">欧联杯</span>
+                        <span style="background: #eee; padding: 5px 10px; border-radius: 15px; font-size: 0.85rem;">土耳其</span>
+                        <span style="background: #eee; padding: 5px 10px; border-radius: 15px; font-size: 0.85rem;">伯纳乌</span>
+                    </div>
+                </div>
+            </aside>
+        </div>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="section-title">常见问题 (FAQ)</div>
+            
+            <div class="faq-item">
+                <div class="faq-question">这场比赛在哪个国家举行？</div>
+                <div class="faq-answer">
+                    <p>比赛将在西班牙马德里的伯纳乌球场举行。</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">首回合的比分是多少？</div>
+                <div class="faq-answer">
+                    <p>首回合比赛中，加拉塔萨雷在客场以 1-0 战胜了皇家马德里，伊卡尔迪打入全场唯一进球。</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">在哪里可以观看这场比赛的直播？</div>
+                <div class="faq-answer">
+                    <p>本场比赛通常由各大体育转播平台播出，具体请关注官方转播权信息。</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>关于本站</h4>
+                <p style="font-size: 0.9rem; line-height: 1.6;">
+                    皇马vs加拉塔萨雷专题网致力于为球迷提供最及时、最专业的足球赛事资讯、数据统计及深度分析。我们专注于欧联杯赛事报道。
+                </p>
+            </div>
+            <div class="footer-col">
+                <h4>快速导航</h4>
+                <ul>
+                    <li><a href="#">比赛直播</a></li>
+                    <li><a href="#">赛程表</a></li>
+                    <li><a href="#">积分榜</a></li>
+                    <li><a href="#">球员数据库</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>热门球队</h4>
+                <ul>
+                    <li><a href="#">皇家马德里</a></li>
+                    <li><a href="#">加拉塔萨雷</a></li>
+                    <li><a href="#">皇家社会</a></li>
+                    <li><a href="#">费内巴切</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 皇马vs加拉塔萨雷资讯网. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // FAQ Interaction
+        document.querySelectorAll('.faq-question').forEach(item => {
+            item.addEventListener('click', event => {
+                const parent = item.parentElement;
+                const isActive = parent.classList.contains('active');
+                
+                // Close all others
+                document.querySelectorAll('.faq-item').forEach(child => {
+                    child.classList.remove('active');
+                });
+
+                // Toggle current
+                if (!isActive) {
+                    parent.classList.add('active');
+                }
+            });
+        });
+
+        // Simple Nav Scroll Effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.style.boxShadow = '0 4px 12px rgba(0,0,0,0.1)';
+            } else {
+                header.style.boxShadow = '0 2px 8px rgba(0,0,0,0.05)';
+            }
+        });
+    </script>
+</body>
+  </html>
