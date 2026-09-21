@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>养女电视剧全集百度影音 - 在线观看与剧情介绍指南</title>
+    <meta name="description" content="本站提供养女电视剧全集高清在线观看资源，包含剧情简介、角色介绍及观看指南。支持多种播放源，高清流畅，致力于为用户提供便捷的影视观看体验。">
+    <meta name="keywords" content="养女电视剧全集,养女百度影音,养女在线观看,养女电视剧,电视剧全集">
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #d32f2f;
+            --secondary-color: #f5f5f5;
+            --text-main: #333333;
+            --text-secondary: #666666;
+            --border-color: #e0e0e0;
+            --spacing-unit: 16px;
+            --container-width: 1200px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+            line-height: 1.6;
+            color: var(--text-main);
+            background-color: #fff;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: var(--primary-color);
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Header */
+        header {
+            background-color: #fff;
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .header-inner {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 var(--spacing-unit);
+            height: 60px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+        }
+
+        .logo span {
+            color: var(--text-main);
+            margin-left: 5px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            font-size: 15px;
+            color: var(--text-main);
+            font-weight: 500;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #fce4ec 0%, #f3e5f5 100%);
+            padding: 40px var(--spacing-unit);
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: var(--text-main);
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            max-width: 800px;
+            margin: 0 auto 20px;
+        }
+
+        .search-box {
+            display: inline-flex;
+            max-width: 500px;
+            width: 100%;
+        }
+
+        .search-box input {
+            flex: 1;
+            padding: 12px 16px;
+            border: 1px solid var(--border-color);
+            border-radius: 4px 0 0 4px;
+            font-size: 16px;
+            outline: none;
+        }
+
+        .search-box button {
+            padding: 0 24px;
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.2s;
+        }
+
+        .search-box button:hover {
+            background-color: #b71c1c;
+        }
+
+        /* Main Container */
+        .container {
+            max-width: var(--container-width);
+            margin: 30px auto;
+            padding: 0 var(--spacing-unit);
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            gap: 30px;
+        }
+
+        /* Video Section */
+        .video-player-section {
+            background: #000;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            position: relative;
+            padding-top: 56.25%; /* 16:9 Aspect Ratio */
+        }
+
+        .video-placeholder {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            background-color: #1a1a1a;
+        }
+
+        .play-icon {
+            width: 80px;
+            height: 80px;
+            background-color: rgba(255,255,255,0.2);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 15px;
+            cursor: pointer;
+            transition: transform 0.2s, background-color 0.2s;
+        }
+
+        .play-icon:hover {
+            transform: scale(1.1);
+            background-color: rgba(255,255,255,0.3);
+        }
+
+        .play-icon svg {
+            width: 32px;
+            height: 32px;
+            fill: #fff;
+            margin-left: 4px;
+        }
+
+        .video-info {
+            padding: 20px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .video-title {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-bottom: 15px;
+        }
+
+        .tag {
+            background-color: #ffebee;
+            color: var(--primary-color);
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+        }
+
+        .episode-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .episode-btn {
+            background-color: #fff;
+            border: 1px solid var(--border-color);
+            padding: 10px;
+            text-align: center;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-size: 14px;
+        }
+
+        .episode-btn:hover {
+            border-color: var(--primary-color);
+            color: var(--primary-color);
+        }
+
+        .episode-btn.active {
+            background-color: var(--primary-color);
+            color: #fff;
+            border-color: var(--primary-color);
+        }
+
+        /* Sidebar */
+        aside {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .sidebar-card {
+            background: #fff;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+        .sidebar-title {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--primary-color);
+            display: inline-block;
+        }
+
+        .rank-list li {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 12px;
+            font-size: 14px;
+        }
+
+        .rank-list a {
+            color: var(--text-secondary);
+        }
+
+        .rank-list a:hover {
+            color: var(--primary-color);
+        }
+
+        .rank-num {
+            font-weight: bold;
+            width: 20px;
+            text-align: center;
+            margin-right: 8px;
+        }
+
+        .rank-num.top {
+            color: #ff9800;
+        }
+
+        .rank-num.top-1 {
+            color: #f44336;
+            font-size: 16px;
+        }
+
+        /* Content Section */
+        .content-section {
+            margin-top: 30px;
+        }
+
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .section-header h2 {
+            font-size: 20px;
+            border-left: 4px solid var(--primary-color);
+            padding-left: 10px;
+        }
+
+        .grid-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery-item {
+            border-radius: 8px;
+            overflow: hidden;
+            background: #fff;
+            border: 1px solid var(--border-color);
+            transition: transform 0.2s;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .gallery-thumb {
+            width: 100%;
+            height: 280px;
+            background-color: #eee;
+            position: relative;
+        }
+
+        .gallery-thumb img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .play-badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: rgba(0,0,0,0.7);
+            color: #fff;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 12px;
+        }
+
+        .gallery-info {
+            padding: 12px;
+        }
+
+        .gallery-title {
+            font-size: 15px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .gallery-meta {
+            font-size: 12px;
+            color: var(--text-secondary);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #f8f9fa;
+            border-top: 1px solid var(--border-color);
+            padding: 40px var(--spacing-unit);
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .footer-links a {
+            margin: 0 10px;
+            color: var(--text-secondary);
+            font-size: 14px;
+        }
+
+        .copyright {
+            color: var(--text-secondary);
+            font-size: 13px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+            
+            .nav-links {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .episode-list {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="header-inner">
+        <a href="#" class="logo">影视<span>资源库</span></a>
+        <nav class="nav-links">
+            <a href="#">首页</a>
+            <a href="#">电视剧</a>
+            <a href="#">电影</a>
+            <a href="#">综艺</a>
+            <a href="#">动漫</a>
+            <a href="#">排行榜</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="hero">
+        <h1>养女电视剧全集</h1>
+        <p>提供高清在线观看资源，支持百度影音、快播等多种格式，为您带来流畅的观影体验。</p>
+        <div class="search-box">
+            <input type="text" placeholder="搜索电视剧名称...">
+            <button type="button">搜索</button>
+        </div>
+    </section>
+
+    <div class="container">
+        <!-- Main Content Area -->
+        <div class="main-content">
+            <!-- Player Section -->
+            <section class="video-player-section">
+                <div class="video-placeholder" id="videoContainer">
+                    <div class="play-icon" onclick="playVideo()">
+                        <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                    </div>
+                    <p>点击播放《养女》全集</p>
+                </div>
+            </section>
+
+            <article class="video-info">
+                <h2 class="video-title">养女 (电视剧全集)</h2>
+                <div class="tags">
+                    <span class="tag">剧情</span>
+                    <span class="tag">家庭伦理</span>
+                    <span class="tag">热播</span>
+                    <span class="tag">全集</span>
+                </div>
+                <p style="margin-top: 15px; color: #555;">
+                    《养女》是一部备受关注的家庭伦理剧，讲述了养女在成长过程中所经历的情感纠葛与家庭变故。故事围绕亲情、责任与爱展开，展现了复杂的人性光辉。本站收录该剧全集资源，高清画质，无需下载，在线即可流畅观看。
+                </p>
+            </article>
+
+            <section class="episode-list-section">
+                <h3 style="margin-bottom: 15px; font-size: 18px;">全剧分集播放</h3>
+                <div class="episode-list">
+                    <a href="#" class="episode-btn active">第1集</a>
+                    <a href="#" class="episode-btn">第2集</a>
+                    <a href="#" class="episode-btn">第3集</a>
+                    <a href="#" class="episode-btn">第4集</a>
+                    <a href="#" class="episode-btn">第5集</a>
+                    <a href="#" class="episode-btn">第6集</a>
+                    <a href="#" class="episode-btn">第7集</a>
+                    <a href="#" class="episode-btn">第8集</a>
+                    <a href="#" class="episode-btn">第9集</a>
+                    <a href="#" class="episode-btn">第10集</a>
+                    <a href="#" class="episode-btn">第11集</a>
+                    <a href="#" class="episode-btn">第12集</a>
+                    <a href="#" class="episode-btn">第13集</a>
+                    <a href="#" class="episode-btn">第14集</a>
+                    <a href="#" class="episode-btn">第15集</a>
+                    <a href="#" class="episode-btn">第16集</a>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <div class="section-header">
+                    <h2>相关推荐</h2>
+                    <a href="#" style="font-size: 14px; color: var(--primary-color);">查看更多 &gt;</a>
+                </div>
+                <div class="grid-gallery">
+                    <article class="gallery-item">
+                        <div class="gallery-thumb">
+                            <span class="play-badge">HD</span>
+                            <img src="https://picsum.photos/seed/tv1/300/420" alt="电视剧封面">
+                        </div>
+                        <div class="gallery-info">
+                            <h3 class="gallery-title">幸福归来</h3>
+                            <div class="gallery-meta">更新至36集</div>
+                        </div>
+                    </article>
+                    <article class="gallery-item">
+                        <div class="gallery-thumb">
+                            <span class="play-badge">HD</span>
+                            <img src="https://picsum.photos/seed/tv2/300/420" alt="电视剧封面">
+                        </div>
+                        <div class="gallery-info">
+                            <h3 class="gallery-title">回家的诱惑</h3>
+                            <div class="gallery-meta">全集</div>
+                        </div>
+                    </article>
+                    <article class="gallery-item">
+                        <div class="gallery-thumb">
+                            <span class="play-badge">HD</span>
+                            <img src="https://picsum.photos/seed/tv3/300/420" alt="电视剧封面">
+                        </div>
+                        <div class="gallery-info">
+                            <h3 class="gallery-title">妻子的秘密</h3>
+                            <div class="gallery-meta">全集</div>
+                        </div>
+                    </article>
+                    <article class="gallery-item">
+                        <div class="gallery-thumb">
+                            <span class="play-badge">HD</span>
+                            <img src="https://picsum.photos/seed/tv4/300/420" alt="电视剧封面">
+                        </div>
+                        <div class="gallery-info">
+                            <h3 class="gallery-title">错爱一生</h3>
+                            <div class="gallery-meta">全集</div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </div>
+
+        <!-- Sidebar -->
+        <aside>
+            <div class="sidebar-card">
+                <h3 class="sidebar-title">热门排行</h3>
+                <ul class="rank-list">
+                    <li><a href="#"><span class="rank-num top-1">1</span> <span>回家的诱惑</span></a></li>
+                    <li><a href="#"><span class="rank-num top">2</span> <span>幸福归来</span></a></li>
+                    <li><a href="#"><span class="rank-num top">3</span> <span>错爱一生</span></a></li>
+                    <li><a href="#"><span class="rank-num">4</span> <span>妻子的秘密</span></a></li>
+                    <li><a href="#"><span class="rank-num">5</span> <span>养女 (全集)</span></a></li>
+                    <li><a href="#"><span class="rank-num">6</span> <span>婆婆来了</span></a></li>
+                    <li><a href="#"><span class="rank-num">7</span> <span>当婆婆遇上妈</span></a></li>
+                    <li><a href="#"><span class="rank-num">8</span> <span>媳妇的美好时代</span></a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-card">
+                <h3 class="sidebar-title">播放源</h3>
+                <ul class="rank-list">
+                    <li><a href="#">百度影音 (高速)</a></li>
+                    <li><a href="#">快播 (高清)</a></li>
+                    <li><a href="#">M3U8 (在线)</a></li>
+                    <li><a href="#">土豆高清</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-card">
+                <h3 class="sidebar-title">观看指南</h3>
+                <p style="font-size: 13px; color: #666; line-height: 1.8;">
+                    1. 推荐使用百度影音或快播播放器观看。<br>
+                    2. 全集资源已整理完毕，可直接在线播放。<br>
+                    3. 如遇卡顿，请尝试切换至M3U8源。<br>
+                    4. 网站所有资源均来自网络，仅供学习交流。
+                </p>
+            </div>
+        </aside>
+    </div>
+</main>
+
+<footer>
+    <div class="footer-links">
+        <a href="#">关于我们</a>
+        <a href="#">免责声明</a>
+        <a href="#">版权声明</a>
+        <a href="#">联系方式</a>
+        <a href="#">网站地图</a>
+    </div>
+    <p class="copyright">
+        Copyright &copy; 2023 影视资源库. All Rights Reserved.<br>
+        本站仅提供信息存储空间服务，不参与制作、上传。
+    </p>
+</footer>
+
+<script>
+    function playVideo() {
+        const container = document.getElementById('videoContainer');
+        // 模拟视频播放状态
+        container.innerHTML = `
+            <div style="color: #fff; text-align: center;">
+                <div style="font-size: 40px; margin-bottom: 10px;">▶</div>
+                <p>正在加载播放器资源...</p>
+                <p style="font-size: 12px; opacity: 0.7; margin-top: 5px;">请确保您的设备已安装百度影音或快播播放器</p>
+            </div>
+        `;
+        
+        // 模拟加载完成后的iframe嵌入（示例）
+        setTimeout(() => {
+            container.innerHTML = `
+                <iframe 
+                    width="100%" 
+                    height="100%" 
+                    src="about:blank" 
+                    allowfullscreen="allowfullscreen"
+                    frameborder="0">
+                </iframe>
+            `;
+        }, 1000);
+    }
+
+    // 简单的点击切换效果
+    const episodeBtns = document.querySelectorAll('.episode-btn');
+    episodeBtns.forEach(btn => {
+        btn.addEventListener('click', function(e) {
+            e.preventDefault();
+            episodeBtns.forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
+            // 模拟切换剧集
+            playVideo();
+        });
+    });
+</script>
+
+</body>
+</html>
